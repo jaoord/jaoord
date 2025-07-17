@@ -1,0 +1,41 @@
+---
+description: Code quality & architecture rules
+alwaysApply: false
+---
+## Code Quality & Architecture Rules
+
+### Performance First
+- Always consider database query optimization - avoid N+1 queries by using joins, `In()` operators, or batch queries
+- Use `Promise.all()` only when operations are truly independent, not for database queries that can be batched
+- Identify and extract reusable logic into private methods before writing duplicate code
+- Consider caching for expensive operations that are called multiple times
+
+### Type Safety & Maintainability  
+- Never use `(obj as any)` - always create proper TypeScript interfaces for custom fields and complex objects
+- Extract magic numbers and strings into named constants at the top of the file
+- Create small, focused functions with single responsibilities rather than large monolithic methods
+- Use descriptive variable names that explain business logic, not just technical implementation
+
+### Error Handling & Validation
+- Add input validation at the start of public methods (check for null, negative numbers, empty arrays)
+- Provide specific, actionable error messages that include context about what failed and why
+- Handle edge cases explicitly rather than assuming happy path scenarios
+- Use consistent error handling patterns across similar methods
+
+### Database & Business Logic
+- Minimize database queries by fetching related data in single queries with proper relations
+- Separate business logic from data access - create helper methods for complex calculations
+- Consider the business impact: prioritize operations that affect customer experience (like stock allocation)
+- Document complex business rules in comments, especially when they involve multiple criteria
+
+### Code Organization
+- If you see similar logic in multiple places, immediately extract it into a shared function
+- Group related functionality together and separate concerns clearly
+- Use early returns to reduce nesting and improve readability
+- Create interfaces for complex data structures that are used in multiple places
+
+### Before Writing Any Code
+- Ask yourself: "Is there a simpler way to achieve this?"
+- Consider: "What will break if the requirements change slightly?"
+- Think: "How would I test this logic in isolation?"
+- Check: "Am I duplicating existing Vendure functionality?"

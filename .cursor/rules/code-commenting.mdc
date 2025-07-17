@@ -1,0 +1,9 @@
+---
+description: code commenting (and when not to do it)
+globs:
+alwaysApply: false
+---
+## Code comments
+Don't write comments when the intent of the code is clear. 
+Document unclear dependencies with comments. Try first to write code without order dependencies.Try second to write code that makes dependencies obvious. If you’re still concerned that an order dependency isn’t explicit enough, document it.
+Documenting unclear dependencies is one aspect of documenting coding assumptions, which is critical to writing maintainable, modifiable code.

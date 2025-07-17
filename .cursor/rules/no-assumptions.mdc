@@ -1,0 +1,12 @@
+---
+description: No assumptions
+globs:
+alwaysApply: false
+---
+
+## Always Check Project Context First
+Before making assumptions about tooling or dependencies:
+- [ ] Check package.json for scripts, dependencies, and project structure
+- [ ] Verify what framework/version is actually being used
+- [ ] Look for existing configuration files before suggesting new ones
+- [ ] Don't assume standard setups - every project is different

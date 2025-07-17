@@ -1,0 +1,30 @@
+---
+description: Trigger Phrases for Better Code
+globs:
+alwaysApply: false
+---
+## Trigger Phrases for Better Code
+
+When I say "implement [feature]", you should:
+1. First analyze if this project or its libraries already provide this functionality
+2. Identify all database queries needed and batch them efficiently  
+3. Create TypeScript interfaces for any custom data structures
+4. Extract reusable logic into private methods
+5. Add input validation and error handling
+6. Write the minimal code that solves the exact problem
+
+When working with database operations:
+- Always use batch queries instead of loops with individual queries
+- Include all necessary relations in the initial query
+- Consider query performance impact before writing the code
+
+When working with business logic:
+- Extract complex sorting/filtering logic into named, testable functions
+- Use configuration objects instead of magic numbers
+- Prioritize readability over cleverness
+- Document any non-obvious business rules
+
+If you find yourself writing similar code twice:
+- Stop and extract the common logic immediately
+- Create a reusable function with clear parameters
+- Consider if this should be a utility function or class method

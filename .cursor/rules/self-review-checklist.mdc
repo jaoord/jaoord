@@ -1,0 +1,17 @@
+---
+description: Self-review checklist
+globs:
+alwaysApply: false
+---
+## Self-Review Checklist
+
+Before submitting code, ask yourself:
+- [ ] Did I batch database queries efficiently?
+- [ ] Are there any `as any` type casts that should be proper interfaces?
+- [ ] Did I extract duplicate logic into reusable functions?
+- [ ] Are magic numbers/strings defined as named constants?
+- [ ] Does this handle edge cases and invalid inputs gracefully?
+- [ ] Would this code be easy to test in isolation?
+- [ ] Is the business logic clearly separated from data access?
+- [ ] Did I check if this project or its libraries already provide this functionality?
+- [ ] Prevent Not Invented Here syndrome.

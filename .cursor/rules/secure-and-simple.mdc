@@ -1,0 +1,10 @@
+---
+description: Secure and simple. Don't repeat yourself.
+globs:
+alwaysApply: false
+---
+# Secure and simple:
+[ ] Always keep the output as concise as possible.
+[ ] Take OWASP in mind. don't produce insecure code or code that could lead to potential security issues.
+
+The definition of insanity is trying the same thing over and over again and expecting different results.
