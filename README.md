@@ -4,10 +4,10 @@ I write code and I love it. Sometimes it’s good but most of the time it barely
 
 ### Currently messing with:
 - React + TypeScript
-- .NET 8 (Razor Pages, minimal APIs)
+- .NET (Razor Pages, minimal APIs)
 - Supabase
-- PayloadCMS
-- Fake backends, real curiosity
+- Shopify APIs
+- Fake backends
 
 ### Projects are mostly:
 - Things I want to use myself
