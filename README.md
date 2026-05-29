@@ -1,6 +1,6 @@
 # @jaoord here
 
-I write code. Sometimes it’s good. Sometimes it just works. Either way, it gets built.
+I write code and I love it. Sometimes it’s good but most of the time it barely works. Either way, it gets built.
 
 ### Currently messing with:
 - React + TypeScript
